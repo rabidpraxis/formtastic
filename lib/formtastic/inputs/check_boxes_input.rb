@@ -157,7 +157,7 @@ module Formtastic
       end
 
       def selected_values
-        @selected_values ||= make_selected_values
+        @selected_values ||= options[:selected_values] || make_selected_values
       end
 
       def disabled_values
